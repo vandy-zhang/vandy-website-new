@@ -1,10 +1,11 @@
 import Image from "next/image";
 import VandyPic from "@/static/pictures/vandy.png";
-import "./globals.css";
+import "@/app/globals.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center gap-y-20">
+    <div className="home flex flex-col items-center gap-y-20">
       <div className="flex items-center gap-x-50">
         <div
           className="font-sriracha col-span-2 col-start-2 text-6xl"
@@ -22,12 +23,13 @@ export default function Home() {
           className="col-start-4 rounded-[50px]"
         />
       </div>
-      <div
+      <Link
         className="font-stylish col-start-3 col-span-1 text-center text-4xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
+        href="/aboutme"
       >
         About Me →
-      </div>
-    </main>
+      </Link>
+    </div>
   );
 }
