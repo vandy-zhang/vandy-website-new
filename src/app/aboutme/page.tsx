@@ -98,11 +98,12 @@ export default function AboutMe() {
             style={{ color: "var(--color-body)", opacity: 0.7 }}
           >
             They look detached, but their mind is a buzzing workshop of theories
-            and connections. <br/>They are chill and entertaining because they are
-            unfiltered, quirky, and surprisingly insightful. <br/>They are confident
-            enough to not spiral over mistakes. <br/>They may need to stay grounded
-            in reality. <br/>They should balance big-picture theorizing with
-            practical execution.
+            and connections. <br />
+            They are chill and entertaining because they are unfiltered, quirky,
+            and surprisingly insightful. <br />
+            They are confident enough to not spiral over mistakes. <br />
+            They may need to stay grounded in reality. <br />
+            They should balance big-picture theorizing with practical execution.
           </div>
           <div
             className="font-stylish text-2xl"
@@ -115,7 +116,7 @@ export default function AboutMe() {
             style={{ color: "var(--color-body)", opacity: 0.7 }}
           >
             This is just for fun. Humans are hard to read. I’m still too far
-            away from knowing myself. You too.
+            away from knowing myself.
           </div>
         </div>
       </div>
