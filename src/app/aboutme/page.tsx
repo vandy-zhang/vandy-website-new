@@ -1,7 +1,8 @@
 import "@/app/globals.css";
 import Image from "next/image";
-import SignCard from "../components/zodiac/signCard";
 import Snake from "@/static/pictures/snake.png";
+import BigSix from "../components/zodiac/bigSix";
+import MBTI from "../components/personality/mbti";
 
 export default function AboutMe() {
   return (
@@ -21,18 +22,7 @@ export default function AboutMe() {
             height={126}
             className="m-2"
           />
-          <div className="flex flex-col items-center gap-y-6 p-4">
-            <div className="flex items-center gap-x-4">
-              <SignCard type="Sun" sign="Leo"></SignCard>
-              <SignCard type="Moon" sign="Gemini"></SignCard>
-              <SignCard type="Rising" sign="Virgo"></SignCard>
-            </div>
-            <div className="flex items-center gap-x-4">
-              <SignCard type="Venus" sign="Cancer"></SignCard>
-              <SignCard type="Mercury" sign="Virgo"></SignCard>
-              <SignCard type="Mars" sign="Sagittarius"></SignCard>
-            </div>
-          </div>
+          <BigSix />
         </div>
         <div className="flex flex-col gap-y-4">
           <div
@@ -57,7 +47,12 @@ export default function AboutMe() {
             className="font-stylish text-2xl"
             style={{ color: "var(--color-header)", opacity: 0.7 }}
           >
-            Today’s Horoscope: September 21, 2025
+            Today’s Horoscope:{" "}
+            {new Date().toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
           </div>
           <div
             className="font-stylish text-xl"
@@ -78,6 +73,7 @@ export default function AboutMe() {
           My Personality Tests
         </div>
         <div className="flex flex-col gap-y-4">
+          <MBTI />
           <div
             className="font-stylish text-xl"
             style={{ color: "var(--color-body)", opacity: 0.7 }}
