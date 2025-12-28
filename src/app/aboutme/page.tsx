@@ -3,6 +3,8 @@ import Image from "next/image";
 import Snake from "@/static/pictures/snake.png";
 import BigSix from "../components/zodiac/bigSix";
 import MBTI from "../components/personality/mbti";
+import { formatDate } from "../utilities/common";
+import Horoscope from "../components/zodiac/horoscope";
 
 export default function AboutMe() {
   return (
@@ -47,24 +49,9 @@ export default function AboutMe() {
             className="font-stylish text-2xl"
             style={{ color: "var(--color-header)", opacity: 0.7 }}
           >
-            Today’s Horoscope:{" "}
-            {new Date().toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })}
+            Today’s Horoscope: {formatDate(new Date())}
           </div>
-          <div
-            className="font-stylish text-xl"
-            style={{ color: "var(--color-body)", opacity: 0.7 }}
-          >
-            You'll be pulled in many directions today, Leo. It could be like
-            you're in a candy shop with only a dollar and everything looks
-            delicious. Be careful of starting off in too many directions at once
-            and not following through on any of them. If you're stuck and unsure
-            which way to turn, retreat from the situation and spend some time by
-            yourself. You work best alone.
-          </div>
+          <Horoscope />
         </div>
         <div
           className="font-sriracha col-start-3 col-span-1 text-center text-4xl"
@@ -108,11 +95,10 @@ export default function AboutMe() {
             But
           </div>
           <div
-            className="font-stylish text-xl"
+            className="font-stylish text-xl mb-8"
             style={{ color: "var(--color-body)", opacity: 0.7 }}
           >
-            This is just for fun. Humans are hard to read. I’m still too far
-            away from knowing myself.
+            Humans are hard to read. I’m still too far away from knowing myself.
           </div>
         </div>
       </div>

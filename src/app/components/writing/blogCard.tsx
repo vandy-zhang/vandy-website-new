@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import "./blogCard.css";
+import { formatDate } from "@/app/utilities/common";
 
 export type BlogCardProps = {
   title: string;
@@ -13,11 +14,7 @@ export default function BlogCard(props: BlogCardProps) {
     <div className="blogCard flex flex-col items-center justify-between">
       <span className="font-stylish text-center text-2xl">{title}</span>
       <span className="font-stylish text-center text-base">
-        {date.toLocaleDateString("en-US", {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        })}
+        {formatDate(date)}
       </span>
     </div>
   );

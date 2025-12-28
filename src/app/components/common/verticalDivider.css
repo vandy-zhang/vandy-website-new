@@ -1,0 +1,5 @@
+.verticalDivider {
+  width: 2px;
+  background-color: var(--color-header);
+  opacity: 0.5;
+}

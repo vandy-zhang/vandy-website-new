@@ -12,11 +12,9 @@ export default function TypeBar(props: TypeBarProps) {
   const { leftDimension, rightDimension, filledPercent, rightAligned } = props;
 
   return (
-    <div className="typeBar-row flex items-center">
-      <span className="font-stylish text-2xl" style={{ width: "25%" }}>
-        {leftDimension}
-      </span>
-      <div className="typeBar items-center">
+    <div className="typeBar-row flex items-center w-full">
+      <span className="font-stylish text-2xl w-1/4">{leftDimension}</span>
+      <div className="typeBar items-center w-1/2">
         <div
           className="typeBar-fill"
           style={{
@@ -26,10 +24,7 @@ export default function TypeBar(props: TypeBarProps) {
           }}
         />
       </div>
-      <span
-        className="font-stylish text-2xl text-right"
-        style={{ width: "25%" }}
-      >
+      <span className="font-stylish text-2xl text-right w-1/4">
         {rightDimension}
       </span>
     </div>
