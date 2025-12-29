@@ -1,5 +1,5 @@
 import "@/app/globals.css";
 
 export default function Music() {
-  return <main>Hello World!</main>;
+  return <main className="content">Hello World!</main>;
 }

@@ -27,10 +27,6 @@
 body {
   background: var(--background);
   color: var(--color-body);
-  padding: 50px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 header {
@@ -39,8 +35,20 @@ header {
   opacity: 0.7;
 }
 
-main {
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .home {

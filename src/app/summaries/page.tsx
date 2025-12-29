@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Summaries() {
   return (
-    <main>
+    <main className="content">
       <ul className="space-y-6">
         <li>
           <Link

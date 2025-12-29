@@ -5,15 +5,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="home flex flex-col items-center gap-y-20">
+    <main className="home flex flex-col items-center gap-y-20">
       <div className="flex items-center gap-x-50">
-        <div
-          className="font-sriracha col-span-2 col-start-2 text-6xl"
-          style={{ opacity: 0.7 }}
-        >
+        <div className="font-sriracha col-span-2 col-start-2 text-6xl opacity-70">
           <span className="block">Hello!</span>
-          <span className="invisible">Hello!</span>
-          <span>I'm Vandy 🙈</span>
+          <span className="block" style={{ textIndent: "4ch" }}>
+            I'm Vandy 🙈
+          </span>
         </div>
         <Image
           src={VandyPic}
@@ -30,6 +28,6 @@ export default function Home() {
       >
         About Me →
       </Link>
-    </div>
+    </main>
   );
 }

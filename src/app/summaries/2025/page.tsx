@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function YearOf2025() {
   return (
-    <main>
+    <main className="content">
       <Link
-        className="font-stylish col-start-3 col-span-1 text-center text-2xl"
+        className="font-stylish col-start-3 col-span-1 text-2xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
         href="/summaries"
       >
@@ -44,7 +44,7 @@ export default function YearOf2025() {
         valleys.
         <br />
         <br />
-        Seven musicals, two concerts, and one live show.
+        Seven musicals and five concerts.
         <br />
         Followed an entire 24-25 figure skating season in the quiet minutes
         after waking up each morning.

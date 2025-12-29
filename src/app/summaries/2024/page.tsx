@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function YearOf2024() {
   return (
-    <main>
+    <main className="content">
       <Link
-        className="font-stylish col-start-3 col-span-1 text-center text-2xl"
+        className="font-stylish col-start-3 col-span-1 text-2xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
         href="/summaries"
       >
