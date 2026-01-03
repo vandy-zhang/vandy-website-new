@@ -27,11 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${sriracha.variable} ${stylish.variable} antialiased`}>
-        <div className="container">
-          <Header />
-          {children}
-          <Footer />
-        </div>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

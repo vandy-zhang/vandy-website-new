@@ -18,10 +18,7 @@ export default function GrowUp() {
             className="w-[3px] opacity-30 self-stretch"
             style={{ backgroundColor: "var(--color-body)" }}
           ></span>
-          <div
-            className="text-xl font-stylish"
-            style={{ color: "var(--color-quote)", opacity: 0.7 }}
-          >
+          <div className="text-xl font-stylish opacity-70">
             What does it mean to grow up?
           </div>
         </blockquote>

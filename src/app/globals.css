@@ -28,22 +28,16 @@
 body {
   background: var(--background);
   color: var(--color-body);
+  padding: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   color: var(--color-header);
   padding-bottom: 50px;
   opacity: 0.7;
-}
-
-.container {
-  max-width: 1350px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 50px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 main {
