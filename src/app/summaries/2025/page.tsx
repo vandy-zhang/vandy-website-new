@@ -3,21 +3,21 @@ import Link from "next/link";
 
 export default function YearOf2025() {
   return (
-    <main className="content">
+    <main className="content max-w-[1000px]">
       <Link
-        className="font-stylish col-start-3 col-span-1 text-2xl"
+        className="font-stylish text-2xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
         href="/summaries"
       >
         ← Go back to my summaries
       </Link>
       <div
-        className="font-sriracha col-start-3 col-span-1 text-4xl mt-8"
+        className="font-sriracha text-4xl mt-8"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
       >
         The Year of 2025
       </div>
-      <span className="block mt-8 mb-8">
+      <span className="block mt-8 mb-8 font-stylish text-lg">
         Zodiac year. <br />
         The year I changed the most since becoming an adult as I learned to
         respect my inner self.
@@ -54,12 +54,12 @@ export default function YearOf2025() {
         <br />
       </span>
       <div
-        className="font-stylish col-start-3 col-span-1 text-2xl"
+        className="font-stylish text-2xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
       >
         Firsts
       </div>
-      <span className="block mt-4 mb-8">
+      <span className="block mt-4 mb-8 font-stylish text-lg">
         My first long solo drive.
         <br />
         My first time breaking up with a best friend.
@@ -80,17 +80,19 @@ export default function YearOf2025() {
         pieces of music, or getting to know someone.
       </span>
       <div
-        className="font-stylish col-start-3 col-span-1 text-2xl"
+        className="font-stylish text-2xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
       >
         Favorites
       </div>
-      <span className="block mt-4 mb-8">
+      <span className="block mt-4 mb-8 font-stylish text-lg">
         <b>Favorite music:</b> <i>Full of Love</i> — Michele McLaughlin
         <br />
         <b>Favorite book:</b> <i>A Thousand Splendid Suns</i>
         <br />
         <b>Favorite series:</b> <i>When Life Gives You Tangerines</i>
+        <br />
+        <b>Favorite TV show:</b> <i>Culinary Class Wars</i>
         <br />
         <b>Favorite actor:</b> Yu Hewei
         <br />
@@ -104,12 +106,12 @@ export default function YearOf2025() {
         <br />
       </span>
       <div
-        className="font-stylish col-start-3 col-span-1 text-2xl"
+        className="font-stylish text-2xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
       >
         Mosts
       </div>
-      <span className="block mt-4 mb-8">
+      <span className="block mt-4 mb-8 font-stylish text-lg">
         <b>Changed me the most:</b> becoming friends with my people at work.
         <br />
         <b>The most romantic moment:</b> driving at night with music in the car,
@@ -122,12 +124,12 @@ export default function YearOf2025() {
         <br />
       </span>
       <div
-        className="font-stylish col-start-3 col-span-1 text-2xl"
+        className="font-stylish text-2xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
       >
         2025
       </div>
-      <span className="block mt-4 mb-8">
+      <span className="block mt-4 mb-8 font-stylish text-lg">
         Not talking differently to different people anymore, I stayed quiet when
         I didn’t feel like speaking, and tried my best to speak honestly when I
         did. When I met people as my real self, I found that this kind of
@@ -144,12 +146,12 @@ export default function YearOf2025() {
         yet.
       </span>
       <div
-        className="font-stylish col-start-3 col-span-1 text-2xl"
+        className="font-stylish text-2xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
       >
         2026
       </div>
-      <span className="block mt-4 mb-8">
+      <span className="block mt-4 mb-8 font-stylish text-lg">
         <b>Goals for the new year:</b> stay healthy, stay happy, and keep loving
         life; sleep more; and continue to treat people with sincerity.
         <br />

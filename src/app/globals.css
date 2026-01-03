@@ -6,6 +6,7 @@
   --color-header: #67378d;
   --color-body: #88888c;
   --color-highlighted: #b33d7a;
+  --color-quote: #0e638e;
 }
 
 @theme inline {
@@ -36,13 +37,19 @@ header {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1350px;
   width: 100%;
   margin: 0 auto;
   padding: 50px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .content {

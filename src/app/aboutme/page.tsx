@@ -10,7 +10,7 @@ export default function AboutMe() {
   return (
     <main className="content flex flex-col gap-y-12 items-center">
       <div
-        className="font-sriracha col-start-3 col-span-1 text-center text-4xl"
+        className="font-sriracha text-4xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
       >
         My Zodiac Signs
@@ -34,7 +34,7 @@ export default function AboutMe() {
         </div>
         <div
           className="font-stylish text-xl"
-          style={{ color: "var(--color-body)", opacity: 0.7 }}
+          style={{ color: "var(--color-body)" }}
         >
           They are a human power bank of life — everything they take care of
           ends up thriving. They come across as warm, composed, and intelligent
@@ -52,7 +52,7 @@ export default function AboutMe() {
         <Horoscope />
       </div>
       <div
-        className="font-sriracha col-start-3 col-span-1 text-center text-4xl"
+        className="font-sriracha text-4xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
       >
         My Personality Tests
@@ -61,7 +61,7 @@ export default function AboutMe() {
         <MBTI />
         <div
           className="font-stylish text-xl"
-          style={{ color: "var(--color-body)", opacity: 0.7 }}
+          style={{ color: "var(--color-body)" }}
         >
           I’m INXX-A. I get different results every time I take a personality
           test, but the three dimensions that never change are introverted,
@@ -76,7 +76,7 @@ export default function AboutMe() {
         </div>
         <div
           className="font-stylish text-xl"
-          style={{ color: "var(--color-body)", opacity: 0.7 }}
+          style={{ color: "var(--color-body)" }}
         >
           They look detached, but their mind is a buzzing workshop of theories
           and connections. <br />
@@ -94,7 +94,7 @@ export default function AboutMe() {
         </div>
         <div
           className="font-stylish text-xl mb-8"
-          style={{ color: "var(--color-body)", opacity: 0.7 }}
+          style={{ color: "var(--color-body)" }}
         >
           Humans are hard to read. I’m still too far away from knowing myself.
         </div>

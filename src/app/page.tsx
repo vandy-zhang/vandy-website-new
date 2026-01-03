@@ -22,7 +22,7 @@ export default function Home() {
         />
       </div>
       <Link
-        className="font-stylish col-start-3 col-span-1 text-center text-4xl"
+        className="font-stylish text-4xl"
         style={{ color: "var(--color-header)", opacity: 0.7 }}
         href="/aboutme"
       >

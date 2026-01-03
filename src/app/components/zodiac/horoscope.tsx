@@ -18,7 +18,7 @@ export default function Horoscope() {
       <VerticalDivider />
       <div
         className="font-stylish text-xl w-3/4 py-1 pl-6"
-        style={{ color: "var(--color-body)", opacity: 0.7 }}
+        style={{ color: "var(--color-body)" }}
       >
         You'll be pulled in many directions today, Leo. It could be like you're
         in a candy shop with only a dollar and everything looks delicious. Be

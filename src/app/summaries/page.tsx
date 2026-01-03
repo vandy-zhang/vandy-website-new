@@ -7,7 +7,7 @@ export default function Summaries() {
       <ul className="space-y-6">
         <li>
           <Link
-            className="font-stylish col-start-3 col-span-1 text-center text-4xl"
+            className="font-stylish text-4xl"
             style={{ color: "var(--color-header)", opacity: 0.7 }}
             href="/summaries/2025"
           >
@@ -16,7 +16,7 @@ export default function Summaries() {
         </li>
         <li>
           <Link
-            className="font-stylish col-start-3 col-span-1 text-center text-4xl"
+            className="font-stylish text-4xl"
             style={{ color: "var(--color-header)", opacity: 0.7 }}
             href="/summaries/2024"
           >
