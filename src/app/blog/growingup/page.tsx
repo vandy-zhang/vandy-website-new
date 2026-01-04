@@ -1,6 +1,7 @@
 import "@/app/globals.css";
+import { formatDate } from "@/app/utilities/common";
 
-export default function GrowUp() {
+export default function GrowingUp() {
   return (
     <main className="content flex flex-col gap-y-12">
       <div className="flex flex-col items-center text-center">
@@ -9,6 +10,12 @@ export default function GrowUp() {
           style={{ color: "var(--color-header)", opacity: 0.7 }}
         >
           Growing Up
+        </div>
+        <div
+          className="font-stylish text-lg mt-2"
+          style={{ color: "var(--color-header)", opacity: 0.7 }}
+        >
+          {formatDate(new Date(2023, 11, 18))}
         </div>
         <span className="mt-2 font-bold">[Translated by AI. Don't read]</span>
       </div>

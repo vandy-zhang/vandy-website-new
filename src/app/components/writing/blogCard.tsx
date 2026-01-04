@@ -12,7 +12,7 @@ export default function BlogCard(props: BlogCardProps) {
 
   return (
     <div className="blogCard flex flex-col items-center justify-between">
-      <span className="font-stylish text-center text-2xl">{title}</span>
+      <span className="font-sriracha text-center text-2xl">{title}</span>
       <span className="font-stylish text-center text-base">
         {formatDate(date)}
       </span>
