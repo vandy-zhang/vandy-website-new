@@ -1,6 +1,4 @@
 import Image from "next/image";
-import GithubIcon from "@/static/icons/github.svg";
-import LinkedinIcon from "@/static/icons/linkedin.svg";
 
 export default function Footer() {
   return (
@@ -11,7 +9,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src={GithubIcon} alt="GitHub" width={30} height={30} />
+          <Image src="/icons/github.svg" alt="GitHub" width={30} height={30} />
         </a>
       </li>
       <li>
@@ -20,7 +18,12 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src={LinkedinIcon} alt="LinkedIn" width={30} height={30} />
+          <Image
+            src="/icons/linkedin.svg"
+            alt="LinkedIn"
+            width={30}
+            height={30}
+          />
         </a>
       </li>
     </ul>

@@ -1,6 +1,5 @@
 import "@/app/globals.css";
 import RecordingCard from "../components/music/recordingCard";
-import ExamplePreview from "@/static/scores/example_preview.png";
 import ScoreCard from "../components/music/scoreCard";
 
 export default function Music() {
@@ -30,15 +29,15 @@ export default function Music() {
         <div className="flex flex-wrap gap-8">
           <ScoreCard
             title="Time Flows Ever Onward -- Evan Call"
-            preview={ExamplePreview}
+            imageSrc="/scores/example_preview.png"
           ></ScoreCard>
           <ScoreCard
             title="Time Flows Ever Onward -- Evan Call"
-            preview={ExamplePreview}
+            imageSrc="/scores/example_preview.png"
           ></ScoreCard>
           <ScoreCard
             title="Time Flows Ever Onward -- Evan Call"
-            preview={ExamplePreview}
+            imageSrc="/scores/example_preview.png"
           ></ScoreCard>
         </div>
       </div>

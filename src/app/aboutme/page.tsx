@@ -1,6 +1,5 @@
 import "@/app/globals.css";
 import Image from "next/image";
-import Snake from "@/static/pictures/snake.png";
 import BigSix from "../components/zodiac/bigSix";
 import MBTI from "../components/personality/mbti";
 import { formatDate } from "../utilities/common";
@@ -17,7 +16,7 @@ export default function AboutMe() {
       </div>
       <div className="flex flex-col items-center">
         <Image
-          src={Snake}
+          src="/pictures/snake.png"
           alt="Snake"
           width={126}
           height={126}

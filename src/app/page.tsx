@@ -1,5 +1,4 @@
 import Image from "next/image";
-import VandyPic from "@/static/pictures/vandy.png";
 import "@/app/globals.css";
 import Link from "next/link";
 
@@ -14,7 +13,7 @@ export default function Home() {
           </span>
         </div>
         <Image
-          src={VandyPic}
+          src="/pictures/vandy.png"
           alt="Vandy Zhang"
           width={200}
           height={240}
