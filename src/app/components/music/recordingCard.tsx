@@ -7,7 +7,7 @@ import { formatDuration } from "@/app/utilities/common";
 
 export type RecordingCardProps = {
   title: string;
-  duration: number; // in seconds
+  mediaSrc: string | Blob | MediaSource | MediaStream;
 };
 
 function PlayPauseIcon({ isPlaying }: { isPlaying: boolean }) {
@@ -24,40 +24,68 @@ function PlayPauseIcon({ isPlaying }: { isPlaying: boolean }) {
 }
 
 export default function RecordingCard(props: RecordingCardProps) {
-  const { title, duration } = props;
+  const { title, mediaSrc } = props;
 
   const barRef = useRef<HTMLDivElement>(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
   const [progress, setProgress] = useState<number>(0); // 0-100 in percentage
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [audioDuration, setAudioDuration] = useState<number>(0);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (isPlaying) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }, [isPlaying]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const handleTimeUpdate = () => {
+      if (!audio.duration) return;
+      setProgress((audio.currentTime / audio.duration) * 100);
+    };
+
+    const handleLoadedMetadata = () => {
+      if (!isNaN(audio.duration)) {
+        setAudioDuration(Math.ceil(audio.duration));
+      }
+    };
+
+    const handleEnded = () => {
+      setIsPlaying(false);
+      setProgress(100);
+    };
+
+    audio.addEventListener("timeupdate", handleTimeUpdate);
+    audio.addEventListener("loadedmetadata", handleLoadedMetadata);
+    audio.addEventListener("ended", handleEnded);
+
+    return () => {
+      audio.removeEventListener("timeupdate", handleTimeUpdate);
+      audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
+      audio.removeEventListener("ended", handleEnded);
+    };
+  }, []);
 
   const updateProgressFromClientX = (clientX: number) => {
-    if (!barRef.current) return;
+    if (!barRef.current || !audioRef.current) return;
 
     const rect = barRef.current.getBoundingClientRect();
     const x = clientX - rect.left;
     const percentage = Math.min(Math.max(x / rect.width, 0), 1);
 
-    setProgress(percentage * 100);
+    audioRef.current.currentTime = percentage * audioRef.current.duration;
   };
 
-  useEffect(() => {
-    if (!isPlaying) return;
-
-    const interval = setInterval(() => {
-      setProgress((prev) => {
-        const next = prev + 100 / duration;
-        if (next >= 100) {
-          setIsPlaying(false);
-          return 100;
-        }
-        return next;
-      });
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [isPlaying, duration]);
-
-  const remainingTime = duration - Math.floor((progress / 100) * duration);
+  const remainingTime =
+    audioDuration - Math.floor((progress / 100) * audioDuration);
 
   return (
     <div className="recordingCard flex flex-col items-center">
@@ -67,6 +95,7 @@ export default function RecordingCard(props: RecordingCardProps) {
           {formatDuration(remainingTime)}
         </div>
       </div>
+      <audio ref={audioRef} src={mediaSrc} />
       <div className="flex items-center justify-between w-full">
         <button
           onClick={() => setIsPlaying(!isPlaying)}

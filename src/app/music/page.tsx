@@ -4,22 +4,22 @@ import ScoreCard from "../components/music/scoreCard";
 
 export default function Music() {
   return (
-    <main className="content">
-      <div className="flex flex-col gap-y-12 items-center mb-8">
+    <main className="content flex flex-col gap-y-12">
+      <div className="flex flex-col gap-y-12 items-center">
         <div
           className="font-sriracha text-4xl"
           style={{ color: "var(--color-header)", opacity: 0.7 }}
         >
           My Piano Recordings
         </div>
-        <RecordingCard title="Full of Love" duration={211}></RecordingCard>
-        <RecordingCard title="Wild Side" duration={187}></RecordingCard>
-        <RecordingCard
-          title="Danza in Re Minore"
-          duration={176}
-        ></RecordingCard>
+        <div className="flex flex-col gap-y-8 items-center w-full">
+          <RecordingCard
+            title="Full of Love"
+            mediaSrc="/recordings/FullOfLove.m4a"
+          ></RecordingCard>
+        </div>
       </div>
-      <div className="flex flex-col gap-y-12 my-8">
+      <div className="flex flex-col gap-y-12 mb-8">
         <div
           className="font-sriracha text-4xl text-center"
           style={{ color: "var(--color-header)", opacity: 0.7 }}
