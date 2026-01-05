@@ -30,14 +30,7 @@ export default function Music() {
           <ScoreCard
             title="Time Flows Ever Onward -- Evan Call"
             imageSrc="/scores/example_preview.png"
-          ></ScoreCard>
-          <ScoreCard
-            title="Time Flows Ever Onward -- Evan Call"
-            imageSrc="/scores/example_preview.png"
-          ></ScoreCard>
-          <ScoreCard
-            title="Time Flows Ever Onward -- Evan Call"
-            imageSrc="/scores/example_preview.png"
+            fileUrl="/scores/FakeScores.pdf"
           ></ScoreCard>
         </div>
       </div>
