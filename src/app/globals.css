@@ -14,6 +14,8 @@
   --color-foreground: var(--foreground);
   --font-sriracha: var(--font-sriracha);
   --font-stylish: var(--font-stylish);
+  --font-hannotate: var(--font-hannotate);
+  --font-stkaiti: var(--font-stkaiti);
   --color-header: var(--color-header);
   --color-body: var(--color-body);
 }

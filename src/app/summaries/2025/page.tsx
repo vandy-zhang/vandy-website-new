@@ -19,8 +19,7 @@ export default function YearOf2025() {
       </div>
       <span className="block mt-8 mb-8 font-stylish text-lg">
         Zodiac year. <br />
-        The year I changed the most since becoming an adult as I learned to
-        respect my inner self.
+        The year I changed the most as I learned to respect my inner self.
         <br />
         Things I used to push onto others out of laziness or avoidance, I slowly
         figured out how to handle on my own.

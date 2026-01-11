@@ -12,7 +12,11 @@ export default function Blog() {
         My Writings
       </div>
       <Link className="w-full" href="/blog/growingup">
-        <BlogCard title="Growing Up" date={new Date(2023, 11, 18)}></BlogCard>
+        <BlogCard
+          title="长大"
+          date={new Date(2023, 11, 18)}
+          language="Chinese"
+        ></BlogCard>
       </Link>
     </main>
   );
