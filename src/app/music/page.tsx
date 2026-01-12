@@ -17,6 +17,10 @@ export default function Music() {
             title="Full of Love"
             mediaSrc="/recordings/FullOfLove.m4a"
           ></RecordingCard>
+          <RecordingCard
+            title="Wild Side"
+            mediaSrc="/recordings/WildSide.m4a"
+          ></RecordingCard>
         </div>
       </div>
       <div className="flex flex-col gap-y-12 mb-8">

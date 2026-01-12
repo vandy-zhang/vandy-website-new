@@ -16,7 +16,10 @@ export default function ScoreCard(props: ScoreCardProps) {
 
   return (
     <Link href={fileUrl} download>
-      <a target="_blank" className="scoreCard flex flex-col items-center gap-y-2">
+      <a
+        target="_blank"
+        className="scoreCard flex flex-col items-center gap-y-2"
+      >
         <Image src={imageSrc} alt="Score Preview" width={310} height={256} />
         <div className="font-sriracha text-2xl text-center">{title}</div>
       </a>
