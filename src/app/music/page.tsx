@@ -32,9 +32,9 @@ export default function Music() {
         </div>
         <div className="flex flex-wrap gap-8">
           <ScoreCard
-            title="Time Flows Ever Onward -- Evan Call"
-            imageSrc="/scores/example_preview.png"
-            fileUrl="/scores/FakeScores.pdf"
+            title="Tian Xing Jian"
+            imageSrc="/scores/TianXingJianPreview.png"
+            fileUrl="/scores/TianXingJian.pdf"
           ></ScoreCard>
         </div>
       </div>

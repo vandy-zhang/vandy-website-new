@@ -15,14 +15,16 @@ export default function ScoreCard(props: ScoreCardProps) {
   const { title, imageSrc, fileUrl } = props;
 
   return (
-    <Link href={fileUrl} download>
-      <a
-        target="_blank"
-        className="scoreCard flex flex-col items-center gap-y-2"
-      >
-        <Image src={imageSrc} alt="Score Preview" width={310} height={256} />
-        <div className="font-sriracha text-2xl text-center">{title}</div>
-      </a>
+    <Link href={fileUrl} target="_blank" className="scoreCard">
+      <div className="scoreCard-image">
+        <Image
+          src={imageSrc}
+          alt="Score Preview"
+          fill
+          className="object-contain"
+        />
+      </div>
+      <div className="scoreCard-title font-sriracha text-2xl">{title}</div>
     </Link>
   );
 }
