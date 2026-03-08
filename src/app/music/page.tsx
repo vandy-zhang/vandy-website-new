@@ -32,7 +32,7 @@ export default function Music() {
           className="font-sriracha text-4xl text-center"
           style={{ color: "var(--color-header)", opacity: 0.7 }}
         >
-          My Music Scores
+          Scores I Transcribed
         </div>
         <div className="flex flex-wrap gap-8">
           <ScoreCard
