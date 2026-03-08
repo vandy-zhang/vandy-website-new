@@ -12,7 +12,7 @@ export default function MBTI() {
       <TypeBar
         leftDimension="N Intuitive"
         rightDimension="S Observant"
-        filledPercent={70}
+        filledPercent={68}
       />
       <TypeBar
         leftDimension="T Thinking"
@@ -28,7 +28,7 @@ export default function MBTI() {
       <TypeBar
         leftDimension="A Assertive"
         rightDimension="T Turbulent"
-        filledPercent={80}
+        filledPercent={70}
       />
     </div>
   );

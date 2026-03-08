@@ -77,7 +77,8 @@ export default function GrowingUp() {
           {formatDate(new Date(2023, 11, 18))}
         </div>
         <span className="mt-2 font-bold">
-          [Translated by AI. Not Accurate. Proceed with Risks.]
+          [Translated by AI. Not accurate and not my style of writing. Proceed
+          with risks.]
         </span>
       </div>
       <div className="prose max-w-[800px] mx-auto font-stylish text-lg leading-relaxed">

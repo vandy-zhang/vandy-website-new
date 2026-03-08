@@ -20,9 +20,6 @@ export default function YearOf2024() {
       <span className="block mt-8 mb-8 font-stylish text-lg">
         Started my first full-time job. <br />
         Stepped into a completely new kind of work. <br />
-        Met many interesting people who are not around my age, and somehow
-        became the one responsible for stirring things up.
-        <br />
         <br />
         Traveled twice. Old places didn’t bring many new surprises.
         <br />
