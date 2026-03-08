@@ -1,13 +1,14 @@
-"use client";
-
 import "@/app/globals.css";
 import Image from "next/image";
-import BigSix from "../components/zodiac/bigSix";
 import MBTI from "../components/personality/mbti";
-import { formatDate } from "../utilities/common";
+import BigSix from "../components/zodiac/bigSix";
 import Horoscope from "../components/zodiac/horoscope";
+import { formatDate } from "../utilities/common";
 
 export default function AboutMe() {
+  const today = new Date();
+  const todayIso = today.toISOString().slice(0, 10);
+
   return (
     <main className="content flex flex-col gap-y-12 items-center">
       <div
@@ -48,9 +49,9 @@ export default function AboutMe() {
           className="font-stylish text-2xl"
           style={{ color: "var(--color-header)", opacity: 0.7 }}
         >
-          Today’s Horoscope: {formatDate(new Date())}
+          Today’s Horoscope: {formatDate(today)}
         </div>
-        <Horoscope />
+        <Horoscope date={todayIso} />
       </div>
       <div
         className="font-sriracha text-4xl"
