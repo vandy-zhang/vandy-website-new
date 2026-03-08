@@ -76,7 +76,9 @@ export default function GrowingUp() {
         >
           {formatDate(new Date(2023, 11, 18))}
         </div>
-        <span className="mt-2 font-bold">[Translated by AI. Don't read]</span>
+        <span className="mt-2 font-bold">
+          [Translated by AI. Not Accurate. Proceed with Risks.]
+        </span>
       </div>
       <div className="prose max-w-[800px] mx-auto font-stylish text-lg leading-relaxed">
         <blockquote className="flex items-start gap-x-4 mb-8">

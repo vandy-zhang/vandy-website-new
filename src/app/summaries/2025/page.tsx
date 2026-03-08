@@ -113,8 +113,8 @@ export default function YearOf2025() {
       <span className="block mt-4 mb-8 font-stylish text-lg">
         <b>Changed me the most:</b> becoming friends with my people at work.
         <br />
-        <b>The most romantic moment:</b> driving at night with music in the car,
-        wind in my ears, and the Milky Way stretching past the window.
+        <b>The most romantic moment:</b> watching the Milky Way stretching past
+        the window while driving at night with music in the car.
         <br />
         <b>Gift I liked the most:</b> the Inazuma CD.
         <br />
